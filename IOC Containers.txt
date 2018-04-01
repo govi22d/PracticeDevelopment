@@ -1,0 +1,13 @@
+Ninject
+1. In Global.aspx.cs file inherit NinjectHttpApplication
+2. Override CreateKernal Method
+3. Initialize new instance of StadardKernal
+4. register your services and Service Interfaces
+5. Override OnApplicationStarted method and call base.OnApplicationStarted() method
+
+
+AutoFac
+1. In Application_Start() initialize a ContainerBuilder()
+2. RegisterControllers and register Services and IService
+3. Now assign it to IContainer
+4. Set Dependency Resolver
